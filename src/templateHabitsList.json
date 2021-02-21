@@ -1,0 +1,12 @@
+[
+  { "id": "001", "name": "Morgens mit Gymnastik anfangen" },
+  { "id": "002", "name": "Mehr Wasser trinken" },
+  { "id": "003", "name": "30 Minuten früher aufstehen" },
+  { "id": "004", "name": "30 Minuten pro Tag lesen" },
+  { "id": "005", "name": "Sport treiben" },
+  { "id": "006", "name": "Spazieren gehen" },
+  {
+    "id": "007",
+    "name": "Abendessen selbst kochen"
+  }
+]
