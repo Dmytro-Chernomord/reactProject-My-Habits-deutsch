@@ -55,7 +55,7 @@ export default function Authorization() {
             <div className={styles.HomeBlock}>
               <p className={styles.HomeTitle}>
                 «Es gibt nichts Leichteres, als mit dem Rauchen aufzuhören. Ich
-                selbst habe es schon 137mal geschafft.».
+                selbst habe es schon 137 Mal geschafft.».
               </p>
               <p className={styles.HomeTitleName}>Mark Twain</p>
               <div className={styles.HomeLogo}>
