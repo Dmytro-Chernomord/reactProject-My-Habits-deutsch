@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {  useSelector} from 'react-redux'
 import { CSSTransition } from 'react-transition-group';
 import HabitsList from '../components/LeftSideBar/Habits/HabitsList';
 import { Scroll } from '../components/Scroll/Scroll';
@@ -8,14 +9,17 @@ import HabitTemplateModal from '../components/HabitTemplateModal/HabitTemplateMo
 import CustomHabbitModal from '../components/CustomHabbitModal/CustomHabbitModal';
 import LeftSideBarStatic from '../components/LeftSideBar/LeftSideBarstatic/LeftSideBarStatic';
 import transitionStyles from '../components/ModalContent/ModalTransition.module.css';
+import habitsSelector from '../redux/habits/habitsSelector'
 
 const LeftSideBarButton = ({ handelClick }) => {
+  const filterItems = useSelector((state)=>habitsSelector.getFilterHabits(state))
   return (
     <Button
       label={'Gewohnheit hinzufügen +'}
       type={'button'}
       green={true}
       handelClick={handelClick}
+      animation={filterItems.length? '' : 'animationScale'}
     />
   );
 };
@@ -23,6 +27,7 @@ const LeftSideBarButton = ({ handelClick }) => {
 export default function LeftSideBarView({ match, onLogOut }) {
   const [customModalData, setCustomModalData] = useState('');
   const [openModal, setOpenModal] = useState('');
+
 
   const handelClick = value => {
     setCustomModalData('');

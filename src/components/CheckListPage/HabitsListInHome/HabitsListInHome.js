@@ -5,12 +5,17 @@ import ItemHabit from '../ItemHabit';
 import sortByTime from '../../../helpers/sortByTime';
 import s from './HabitsListInHome.module.css';
 
+
+
+
+
 class HabitsListInHome extends Component {
   render() {
     const { items } = this.props;
     const sortItems = sortByTime(items);
     return (
       <div className={s.container}>
+        {sortItems.length? '': <div style={{display: 'flex', alignItems:'center', justifyContent:'center', height: '50vh', backgroundColor: 'white' }}>Bis jetzt hast du noch keine Gewohnheiten hinzugefügt</div>}
         {sortItems !== null && sortItems.length > 0 && (
           <ul className={s.list}>
             {sortItems.map(item => (

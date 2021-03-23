@@ -76,7 +76,7 @@ export default function LoginForm({
           <p className={styles.LoginInputTxt}>E-mail</p>
           <input
             className={styles.LoginInput}
-            placeholder="Введите свой E-mail"
+            placeholder="E-mail"
             name="email"
             type="email"
             style={{

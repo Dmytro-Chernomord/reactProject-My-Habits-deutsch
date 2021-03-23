@@ -9,6 +9,7 @@ export default function Button({
   green,
   transparent,
   hoverWhite,
+  animation
 }) {
   return (
     <button
@@ -16,11 +17,11 @@ export default function Button({
       onClick={handelClick}
       className={
         green
-          ? styles.ButtonGreen
+          ? styles.ButtonGreen  + (animation ? ' ' + animation: '')
           : transparent
-          ? styles.ButtonTransparent
+          ? styles.ButtonTransparent  + animation ? ' ' + animation: ''
           : hoverWhite
-          ? styles.ButtonHoverWhite
+          ? styles.ButtonHoverWhite 
           : styles.ButtonWhite
       }
     >
