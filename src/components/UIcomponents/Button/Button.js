@@ -19,7 +19,7 @@ export default function Button({
         green
           ? styles.ButtonGreen  + (animation ? ' ' + animation: '')
           : transparent
-          ? styles.ButtonTransparent  + animation ? ' ' + animation: ''
+          ? styles.ButtonTransparent  + (animation ? ' ' + animation: '')
           : hoverWhite
           ? styles.ButtonHoverWhite 
           : styles.ButtonWhite
