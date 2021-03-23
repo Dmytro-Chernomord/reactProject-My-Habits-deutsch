@@ -23,12 +23,9 @@ const LeftSideBarButton = ({ handelClick }) => {
     />
   );
 };
-
 export default function LeftSideBarView({ match, onLogOut }) {
   const [customModalData, setCustomModalData] = useState('');
   const [openModal, setOpenModal] = useState('');
-
-
   const handelClick = value => {
     setCustomModalData('');
     setOpenModal(value);

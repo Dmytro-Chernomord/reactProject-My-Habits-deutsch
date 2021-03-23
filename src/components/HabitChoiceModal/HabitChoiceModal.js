@@ -38,5 +38,4 @@ function HabitChoiceModal({ onClose, openCustom, openTemplate }) {
     </>
   );
 }
-
 export default ModalBackdrop(HabitChoiceModal);

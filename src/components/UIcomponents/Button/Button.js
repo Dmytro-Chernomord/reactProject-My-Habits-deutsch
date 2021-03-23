@@ -29,7 +29,6 @@ export default function Button({
     </button>
   );
 }
-
 Button.propTypes = {
   type: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,

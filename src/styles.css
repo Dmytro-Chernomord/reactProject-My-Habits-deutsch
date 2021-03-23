@@ -69,7 +69,6 @@ h1 {
 .swiper-slide-next:hover {
   transform: scale(0.9);
 }
-
 .animationScale {
   animation-name: scale;
   animation-duration: 2000ms;
