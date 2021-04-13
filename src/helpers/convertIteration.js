@@ -1,19 +1,19 @@
 export default function convertIteration(value) {
   switch (value) {
     case 'allday':
-      return 'Ежедневно';
+      return 'täglich';
     case 'workday':
-      return 'Пн-Вт-Ср-Чт-Пт';
+      return 'Arbeitstage';
     case 'weekend':
-      return 'Сб-Вс';
+      return 'Wochenende';
     case 'firstset':
-      return 'Пн-Ср-Пт';
+      return 'Mo-Mi-Fr';
     case 'secondset':
-      return 'Вт-Чт-Сб';
+      return 'Di-Do-Sa';
     case 'eachTwoDays':
-      return 'Раз в 2 дня';
+      return 'einmal in zwei Tagen';
     case 'onceAWeek':
-      return 'Раз в неделю';
+      return 'ein Mal pro Woche';
     default:
       return null;
   }

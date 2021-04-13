@@ -74,7 +74,7 @@ function TimeMoney() {
         <div className={styles.dataView}>
           <Wallet />
           <span className={styles.numbers}>
-            {moneyEconomy(filtredArr)} &#8372;
+            {moneyEconomy(filtredArr)} €
           </span>
         </div>
       </li>

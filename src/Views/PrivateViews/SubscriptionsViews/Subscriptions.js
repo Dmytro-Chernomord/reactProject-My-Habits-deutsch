@@ -90,9 +90,9 @@ const Subscriptions = () => {
 
   return (
     <>
-      <Header title="Subscription" />
+      <Header title="Abonnements" />
       <div className={style.div}>
-        <h2 className={style.header}>Subscriptiontyp:</h2>
+        <h2 className={style.header}>Abonnements:</h2>
         <span className={changeColor(subscription)}>{subscription}</span>
         {disabledTimer && (
           <>
@@ -210,7 +210,7 @@ const Subscriptions = () => {
         <div className={style.position}>
           <Button
             type="button"
-            label="Subscription ändern"
+            label="Abonnement ändern"
             handelClick={pushSubsrpt}
           />
         </div>
